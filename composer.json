@@ -1,0 +1,12 @@
+{
+  "name": "avk41/auth",
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  },
+  "require": {
+    "twig/twig": "^3.3",
+    "firebase/php-jwt": "^6.2"
+  }
+}

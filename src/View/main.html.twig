@@ -1,0 +1,17 @@
+{% if logged %}
+    Привет, {{ username }}!
+    <form action="/logout" method="POST">
+    <input type="submit" name = "logout" value="Выйти">
+    </form>
+{% else %}
+    <form action="/login" method="POST">
+        <input placeholder="Логин" name="loginName"><br>
+        <input placeholder="Пароль" name="loginPassword"><br>
+        <input type="submit" name = "enter" value="Войти">
+    </form>
+    <form action="/register" method="POST">
+        <input placeholder="Логин" name="regName"><br>
+        <input placeholder="Пароль" name="regPassword"><br>
+        <input type="submit" name = "register" value="Зарегистрироваться">
+    </form>
+{% endif %}
